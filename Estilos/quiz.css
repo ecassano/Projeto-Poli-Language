@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans';
+}
+
+.container{
+    margin: 0 10%;
+}
+
+.container > h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #B93160;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+h2{
+    margin-bottom: 30px;
+    color: #B93160;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title{
+    padding: 20px 0;
+}
+
+h3{
+    color: white;
+    background-color: #B93160;
+    font-weight: normal;
+    padding: 10px 5px;
+}
+
+.resposta span{
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+button{
+    width: 200px;
+    height: 45px;
+    margin-left: calc(50% - 100px);
+    color: white;
+    background-color: #B93160;
+    border: none;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #ff4385;
+}
+
+button:active{
+    box-shadow: inset 0px 0px 20px #8d2448;
+}
+
+footer {
+    background-color: #B93160;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 70px;
+}
+
+footer h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: white;
+
+}

@@ -1,0 +1,334 @@
+/*Página Sobre*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+/*Classes Auxiliares*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;    
+}
+
+.clear{clear: both}
+
+.w60{
+    width: 60%;
+    float: left;
+}
+
+.w40{
+    width: 40%;
+    float: left;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+}
+
+.w33{
+    float: left;
+    width: 33.3%;
+}
+
+.w100{
+    width: 100%;
+    float: left;
+}
+
+.center{
+    text-align: center;
+}
+
+/*Classes do site*/
+header{
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: white;
+    width: 100%;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.logo{
+    float: left;
+    margin-top: 0.8%;
+    margin-bottom: 5px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #B93160;
+}
+
+/*Menu-desktop*/
+nav.menu-desktop{
+    float: right;
+}
+
+nav.menu-desktop ul{
+    position: relative;
+    top: 12px;
+}
+
+nav.menu-desktop li{
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+nav.menu-desktop a{
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop a:hover{
+    color: #B93160;
+}
+
+/*Section Banner*/
+
+section.title-page{
+    margin-top: 82px;
+    padding: 30px;
+    width: 100%;
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+section.title-page h2{
+    color: #B93160;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+section.title-page p{
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+
+section.title-page > .container{position: relative;z-index: 101;}
+
+.overlay__title-page{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+/*Sobre - container noticia*/
+section.sobre__noticia{
+    padding: 30px 0;
+}
+
+.sobre__noticia__single img{
+    max-width: 100%;
+    float: left;
+    width: 50%;
+    padding: 10px 15px;
+}
+
+.sobre__noticia__single p{
+    color: #646464;
+    font-size: 17px;
+    padding: 10px 15px;
+    float: left;
+    line-height: 30px;
+    width: 50%;
+}
+
+.paragrafo__noticia__single{
+    margin-top: 15px;
+}
+
+/*Efeito Parallax*/
+section.parallax{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url("../Imagens/img-sobre/img-sobre5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+section.parallax h2.chamada-parallax{
+    border: 1px solid white;
+    padding: 10px 15px;
+    color: white;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    box-shadow: 0.5px 0.5px 0.5px black;
+    font-size: 20px;
+    display: inline-block;
+}
+
+section.parallax p{
+    color: white;
+    margin-top: 15px;
+    font-size: 17px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+/*Section equipe*/
+
+section.equipe{
+    padding: 70px 0;
+}
+
+section.equipe h2{
+    font-weight: lighter;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.equipe-circles{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipe-circle-single{
+    padding: 0 20px;
+    text-align: center;
+    width: 33.3%;
+}
+
+.equipe-circle-single:hover{
+    transform: scale(1.05);
+}
+
+.equipe-circle-single h3{
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.equipe-circle-single p{
+    color: #646464;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.avatar-single{
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto;
+}
+
+.avatar-single-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+
+/*Section Histórial*/
+section.historia{
+    background-color: rgb(235, 235, 235);
+    border-top: 2px solid rgb(210, 210, 210);
+    padding: 70px 0;
+}
+
+section.historia h2{
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section.historia p{
+    color: #646464;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 10px;
+    font-weight: normal;
+    text-align: left;
+    padding-right: 15px;
+}
+
+.box-historia img{
+    max-width: 100%;
+    float: right;
+    width: 50%;
+    padding-left: 15px;
+}
+
+
+/*Footer*/
+.footer1{
+    background: #B93160;
+    padding: 20px 0;
+}
+
+.footer1 h2{
+    font-weight: normal;
+    font-size: 23px;
+    color: white;
+}
+
+.footer1 p{
+    margin-top: 4px;
+    font-weight: lighter;
+}
+
+.footer1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer1 a:hover{
+    color: black;
+}
+
+.footer1 img{
+    height: 32px;
+    width: 32px;
+    opacity: 0.6;
+}
+
+.footer1 img:hover{
+    opacity: 1;
+}
+
+div.group-icons a{
+    margin-top: 5px;
+    display: inline-block;
+    padding: 0 1px;
+}
+
+/*Footer2*/
+.footer2{
+    padding: 10px 0;
+    background-color: #8d2448;
+    text-align: center;
+    color: white;
+}
+

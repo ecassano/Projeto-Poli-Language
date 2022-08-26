@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/trabalheconosco.css">
+    <title>Trabalhe Conosco</title>
+</head>
+
+<body>
+    <section class="conteudo">
+        <h1>Trabalhe Conosco</h1>
+        <div class="container">
+        <form action="">
+                <fieldset class="field1 left">
+                    <legend>Informações</legend>
+                    <h5>Nome:</h5>
+                    <input id="inNome" type="text" name="nome" class="input-geral" placeholder="Ex: João..." onblur="verificarCamposBlur('inNome')" onkeyup="verificarCampos('inNome')" onfocus="verificarCamposFocus('inNome')">
+                    <h5>Sobrenome:</h5>
+                    <input id="inSobrenome" type="text" name="sobrenome" class="input-geral" placeholder="Ex: Silva Santos..." onblur="verificarCamposBlur('inSobrenome')" onkeyup="verificarCampos('inSobrenome')" onfocus="verificarCamposFocus('inSobrenome')">
+                    <h5>Nome da Mãe:</h5>
+                    <input id="inNomeMae" type="text" name="nome-mae" class="input-geral" placeholder="Ex: Maria Silva..." onblur="verificarCamposBlur('inNomeMae')" onkeyup="verificarCampos('inNomeMae')" onfocus="verificarCamposFocus('inNomeMae')">
+                    <h5>Nome do Pai:</h5>
+                    <input id="inNomePai" type="text" name="nome-pai" class="input-geral" placeholder="Ex: Roberto Silva..." onblur="verificarCamposBlur('inNomePai')" onkeyup="verificarCampos('inNomePai')" onfocus="verificarCamposFocus('inNomePai')">
+                    <h5>Sexo:</h5>
+                    <input type="radio" name="sexo" checked><label for="masc">Masculino</label>
+                    <input type="radio" name="sexo"><label for="fem">Feminino</label>
+                    <h5>Estado Civil:</h5>
+                    <select name="estado-civil" id="estado-civil">
+                        <option value="solteiro">Solteiro</option>
+                        <option value="casado">Casado</option>
+                        <option value="separado">Separado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="viuvo">Viúvo</option>
+                    </select>
+                    <h5>CPF:</h5>
+                    <input id="inCPF" type="text" name="cpf" class="input-geral" placeholder="00000000000" maxlength="11" onblur="verificarCamposBlur('inCPF')" onkeyup="verificarCampos('inCPF')" onfocus="verificarCamposFocus('inCPF')">
+                    <h5>Identidade:</h5>
+                    <input id="inID" type="text" name="rg" class="input-geral" placeholder="000000000" maxlength="9" onblur="verificarCamposBlur('inID')" onkeyup="verificarCampos('inID')" onfocus="verificarCamposFocus('inID')">
+                    <h5>Nº de registro (CNH):</h5>
+                    <input id="inCNH" type="text" name="cnh" class="input-geral" placeholder="Ex: 12345678910" maxlength="11" onblur="verificarCamposBlur('inCNH')" onkeyup="verificarCampos('inCNH')" onfocus="verificarCamposFocus('inCNH')">
+                    <h5>Data de Nascimento:</h5>
+                    <input id="inData" type="date" name="data-nascimento" class="input-geral">
+                    <h5>Celular:</h5>
+                    <input id="inCel" type="tel" name="celular" class="input-geral" placeholder="Ex: 0000000-0000" maxlength="11" onblur="verificarCamposBlur('inCel')" onkeyup="verificarCampos('inCel')" onfocus="verificarCamposFocus('inCel')">
+                    <h5>Telefone:</h5>
+                    <input id="inTel" type="tel" name="tel" class="input-geral" placeholder="(Opcional)" maxlength="11">
+                    <h5>E-mail:</h5>
+                    <input id="inEmail" type="text" name="email" class="input-geral" placeholder="Ex: joaosilva@gmail.com" onblur="verificarCamposBlur('inEmail')" onkeyup="verificarCampos('inEmail')" onfocus="verificarCamposFocus('inEmail')">
+                </fieldset>
+                <fieldset class="field2 right">
+                    <legend>Localização</legend>
+                    <h5>País:</h5>
+                    <input id="inPais" type="text" name="pais" class="input-geral" placeholder="Ex: Brasil"  onblur="verificarCamposBlur('inPais')" onkeyup="verificarCampos('inPais')" onfocus="verificarCamposFocus('inPais')">
+                    <h5>Cidade:</h5>
+                    <input id="inCidade" type="text" name="cidade" class="input-geral" placeholder="Ex: Rio de Janeiro" onblur="verificarCamposBlur('inCidade')" onkeyup="verificarCampos('inCidade')" onfocus="verificarCamposFocus('inCidade')">
+                    <h5>Endereço:</h5>
+                    <input id="inEndereco" type="text" name="endereco" class="input-geral" placeholder="Ex: Av. Jõao da Silva" onblur="verificarCamposBlur('inEndereco')" onkeyup="verificarCampos('inEndereco')" onfocus="verificarCamposFocus('inEndereco')">
+                    <h5>Bairro:</h5>
+                    <input id="inBairro" type="text" name="bairro" class="input-geral" placeholder="Ex: Icaraí" onblur="verificarCamposBlur('inBairro')" onkeyup="verificarCampos('inBairro')" onfocus="verificarCamposFocus('inBairro')">
+                    <h5>Número:</h5>
+                    <input id="inNumero" type="number" name="numero" class="input-geral" placeholder="Ex: 0000" onblur="verificarCamposBlur('inNumero')" onkeyup="verificarCampos('inNumero')" onfocus="verificarCamposFocus('inNumero')">
+                    <h5>Complemento:</h5>
+                    <input id="inComplemento1" type="text" name="complemento" class="input-geral" placeholder="(Opcional)">
+                    <h5>Complemento 2:</h5>
+                    <input id="inComplemento2" type="text" name="complemento" class="input-geral" placeholder="(Opcional)">
+                </fieldset>
+                <fieldset class="field3 right">
+                    <legend>Qualificação</legend>
+                    <h5>Qual profissão você exerce?</h5>
+                    <input id="inProfissao" type="text" name="funcao" class="input-geral" placeholder="Ex: professor..." onblur="verificarCamposBlur('inProfissao')" onkeyup="verificarCampos('inProfissao')" onfocus="verificarCamposFocus('inProfissao')">
+                    <h5>Se marcou professor, que idioma você ensina?</h5>
+                    <select name="idioma" id="select-idioma">
+                        <option value="ING">Inglês</option>
+                        <option value="ESP">Espanhol</option>
+                        <option value="FRA">Francês</option>
+                        <option value="ALE">Alemão</option>
+                        <option value="ITA">Italiano</option>
+                        <option value="MAN">Mandarim</option>
+                        <option value="RUS">Russo</option>
+                        <option value="ARA">Árabe</option>
+                        <option value="OUT">Outro</option>
+                    </select>
+                    <h5>Se marcou "outro", qual?</h5>
+                    <input id="inOutro" type="text" name="outro" class="input-geral" placeholder="(Opcional)">
+                    <h5>Se marcou professor, qual seu nível de Conhecimento em seu idioma:</h5>
+                    <input id="inNivelConhecimento" type="range" name="nivel-conhecimento" min="1" max="10" step="1" value="5" onblur="verificarCamposBlur()">
+                    <h5>Currículo:</h5>
+                    <input id="inCurriculo" type="file" name="curriculo" class="input-geral" onblur="verificarCamposBlur()">
+                    </fieldset>
+            </form> 
+            <div class="clear"></div>
+            <div class="form2">
+                <button id="enviar" onclick="verificarEnvio()">Enviar</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <h1>Poli-Language</h1>
+    </footer>
+
+    <script src="Js/trabalheconosco.js"></script>
+</body>
+
+</html>

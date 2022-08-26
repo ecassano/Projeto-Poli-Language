@@ -1,0 +1,132 @@
+/*Color Palette:
+#F9F9F9
+#BCBAB8
+#316B83
+white
+rgb(250, 251, 252)
+*/
+
+/*Auxiliares*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 10%;
+}
+
+.clear{
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+body{
+    font-family: 'Open Sans';
+}
+
+/*Form*/
+
+.conteudo{
+    background-color: white;
+}
+
+.conteudo h1{
+    text-align: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #B93160;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+fieldset{
+    width: 46%;
+    margin: 10px 2%;
+    padding: 5px 15px;
+    border: 1px solid #BCBAB8;
+}
+
+legend{
+    padding: 5px;
+    color: #B93160;
+}
+
+h5{
+    padding-bottom: 5px;
+    color: #B93160;
+}
+
+input{
+    margin-bottom: 20px;
+    border: 1px inset #BCBAB8;
+    border-radius: 5px;
+    outline: none;
+}
+
+label{
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+select{
+    margin-bottom: 20px;
+    border: 1px solid #BCBAB8;
+    color: #888;
+}
+
+::placeholder{
+    color: #8888;
+}
+
+.input-geral{
+    padding: 5px 10px;
+}
+
+.form2{
+    text-align: center;
+}
+
+#enviar{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #B93160;
+    border-radius: 5px;
+    padding: 15px 45px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+}
+
+#enviar:hover{
+    background-color: #ff4385;
+}
+
+#enviar:active{
+    box-shadow: inset 0px 0px 20px #8d2448;
+}
+
+footer{
+    background-color: #B93160;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,201 @@
+<html>
+
+<head>
+    <title>Poli-Language</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/index.css">
+</head>
+
+<body>
+    <header>
+        <div class=container>
+            <div class="logo"><a href="/index.html">
+                    <h1>Poli-Language</h1>
+                </a></div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html" style="color: #B93160; font-weight: normal;">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="overlay">
+            <div class="container">
+                <h1>Aprenda um novo idioma de onde estiver</h1>
+                <p>Seja capaz de compreender e participar de conversas da vida real em muito menos tempo, estude como
+                    e quando quiser, tenha acesso a aulas e lições com professores de todos os cantos do globo. Na
+                    Poli-Language
+                    , o limite quem traça é você.
+                <p>
+            </div>
+        </div>
+    </section>
+    <section class="metodo">
+        <div class="container">
+            <h2>Nosso Método</h2>
+            <div class="icone-metodo">
+                <div class="box-icone-single">
+                    <h2><img src="Icones/icones-gerais/icons8-internet-100.png" alt=""></h2>
+                    <h2><img src="Icones/icones-gerais/icons8-internet-white-100.png" alt=""></h2>
+                    <p>Atividades na modalidade remota, 100% online, que ocorrem no site, na seção de alunos.</p>
+                </div>
+                <div class="box-icone-single">
+                    <h2><img src="Icones/icones-gerais/icons8-video-player-64.png" alt=""></h2>
+                    <h2><img src="Icones/icones-gerais/icons8-video-player-white-64.png" alt=""></h2>
+                    <p>Conteúdos, lições e exercícios gravados e disponíveis para o aluno assistir quando e onde quiser.
+                    </p>
+                </div>
+                <div class="box-icone-single">
+                    <h2><img src="Icones/icones-gerais/icons8-vídeo-conferência-100.png" alt=""></h2>
+                    <h2><img src="Icones/icones-gerais/icons8-vídeo-conferência-white-100.png" alt=""></h2>
+                    <p>Professores nativos disponíveis 24 horas por dia para aulas de conversação e solução de dúvidas.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+    <section class="catalogo">
+        <div class="container">
+            <h2>Nossos Cursos</h2>
+            <div class="box-language-single">
+                <span class="arrow-left" onclick="mudarIdioma('antes')"><img
+                        src="Icones/icones-gerais/icons8-divisa-para-cima-90.png" alt=""></span>
+                <img id="img" src="Icones/icones-paises-round/img1.png" alt="Curso de Inglês">
+                <span class="arrow-right" onclick="mudarIdioma('depois')"><img
+                        src="Icones/icones-gerais/icons8-divisa-para-cima-90.png" alt=""></span>
+                <p id="p-idioma1">Inglês</p>
+                <p id="p-idioma2" style="display: none;">Espanhol</p>
+                <p id="p-idioma3" style="display: none;">Francês</p>
+                <p id="p-idioma4" style="display: none;">Alemão</p>
+                <p id="p-idioma5" style="display: none;">Italiano</p>
+                <p id="p-idioma6" style="display: none;">Mandarim</p>
+                <p id="p-idioma7" style="display: none;">Russo</p>
+                <p id="p-idioma8" style="display: none;">Árabe</p>
+            </div>
+        </div>
+    </section>
+    <section class="planos">
+        <div class="container">
+            <h2>Nossos Planos</h2>
+            <div class="box-planos">
+                <span class="box-planos-single">
+                    <h1 style="visibility:hidden;">.</h1>
+                    <div class="conteudo-box-planos-single">
+                        <h3>Básico</h3>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">Curso da sua escolha</p>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">Acompanhamento personalizado
+                        </p>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">1 Acesso</p>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">1 Perfil</p>
+                    </div>
+                    <div class="a-box-planos-single">
+                        <a href="contato.html">Mais informações</a>
+                    </div>
+                </span>
+                <span class="box-planos-single">
+                    <h1>Mais Vendido!</h1>
+                    <div class="conteudo-box-planos-single">
+                        <h3>Premium</h3>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">2 Cursos da sua escolha</p>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">Acompanhamento personalizado
+                        </p>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">Até 2 acessos simultâneos</p>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">Até 2 perfis de usuário</p>
+                    </div>
+                    <div class="a-box-planos-single">
+                        <a href="contato.html">Mais informações</a>
+                    </div>
+                </span>
+                <span class="box-planos-single">
+                    <h1 style="visibility:hidden;">.</h1>
+                    <div class="conteudo-box-planos-single">
+                        <h3>Família</h3>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">4 Cursos da sua escolha</p>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">Acompanhamento personalizado
+                        </p>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">Até 4 acessos simultâneos</p>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">Até 4 perfis de usuário</p>
+                        <p><img src="Icones/icones-gerais/check-icon.png" alt="">Bônus: E-book "Como acelerar o
+                            aprendizado"</p>
+                    </div>
+                    <div class="a-box-planos-single">
+                        <a href="contato.html">Mais informações</a>
+                    </div>
+                </span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <footer class="footer1">
+        <div class="container">
+            <div style="float: left;width: 41.7%;">
+                <h2>Institucional</h2>
+                <p><a href="">Blog</a></p>
+                <p><a href="">E-Books</a></p>
+            </div>
+            <div style="float: left;width: 46.3%;">
+                <h2>Redes Sociais</h2>
+                <div class="group-icons">
+                    <a href="#"><img src="Icones/icones-redes-sociais/icons8-facebook-48.png" alt=""></a>
+                    <a href="#"><img src="Icones/icones-redes-sociais/icons8-instagram-48.png" alt=""></a>
+                    <a href="#"><img src="Icones/icones-redes-sociais/icons8-twitter-48.png" alt=""></a>
+                    <a href="#"><img src="Icones/icones-redes-sociais/icons8-tiktok-48.png" alt=""></a>
+                    <a href="#"><img src="Icones/icones-redes-sociais/icons8-linkedin-48.png" alt=""></a>
+                </div>
+            </div>
+            <div style="float: left;">
+                <h2>Mais</h2>
+                <p><a href="trabalheconosco.html" target="_blank">Trabalhe conosco</a></p>
+                <p><a href="quiz.html" target="_blank">Quiz</a></p>
+                <p><a href="#">Parcerias</a></p>
+                <p><a href="#">Investidores</a></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <footer class="footer2">
+        <div class="contaier">
+            <p>Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        var imagens = [1, 2, 3, 4, 5, 6, 7];
+        var index = 0;
+        var imagem = document.getElementById("img");
+        function mudarIdioma(p) {
+            document.getElementById("p-idioma" + imagens[index]).style.display = "none";
+            if (p == "antes") {
+                if (index == 0) {
+                    index = imagens.length - 1;
+                } else {
+                    index--;
+                }
+            } else {
+                if (index == 6) {
+                    index = 0;
+                } else {
+                    index++;
+                }
+            }
+            imagem.src = "Icones/icones-paises-round/img" + imagens[index] + ".png";
+            document.getElementById("p-idioma" + imagens[index]).style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+/* #B93160 */
+
+/*Classes Auxiliares*/
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;    
+}
+
+.clear{clear: both}
+
+.w60{
+    width: 60%;
+    float: left;
+}
+
+.w40{
+    width: 40%;
+    float: left;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+}
+
+.w33{
+    float: left;
+    width: 33.3%;
+}
+
+.w100{
+    width: 100%;
+    float: left;
+}
+
+.center{
+    text-align: center;
+}
+
+/*Classes do site*/
+header{
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.logo{
+    float: left;
+    margin-top: 0.8%;
+    margin-bottom: 5px;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #B93160;
+}
+
+/*Menu-desktop*/
+nav.menu-desktop{
+    float: right;
+}
+
+nav.menu-desktop ul{
+    position: relative;
+    top: 12px;
+}
+
+nav.menu-desktop li{
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+nav.menu-desktop a{
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop a:hover{
+    color: #B93160;
+}
+
+
+/*Section banner*/
+section.banner{
+    margin-top: 82px;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    padding: 140px 0 200px 0;
+    background-image: url(../Imagens/img-index/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+section.banner > .container{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    left: 0;
+    top: 0;
+}
+
+section.banner h1{
+    padding-top: 15%;
+    color: #B93160;
+    font-size: 50px;
+    font-weight: normal;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+section.banner p{
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+
+/*Section metodo*/
+section.metodo{
+    padding: 70px 0;
+    text-align: center;
+}
+
+section.metodo h2{
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.icone-metodo{
+    margin-top: 50px;
+}
+
+.box-icone-single{
+    float: left;
+    width: 33.3%;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.box-icone-single h2:nth-child(2){
+    display: none;
+}
+
+.box-icone-single:hover h2:nth-child(2){
+    display: block;
+}
+
+.box-icone-single:hover h2:nth-child(1){
+    display: none;
+}
+
+.box-icone-single:hover{
+    background-color: #B93160;
+}
+
+.box-icone-single:hover p{
+    color: white;
+}
+
+.box-icone-single img{
+    height: 90px;
+    width: 70px;
+    padding-bottom: 20px;
+}
+
+.box-icone-single p{
+    color: #646464;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/*Section Catálogo*/
+
+section.catalogo{
+    text-align: center;
+    padding: 70px 0 100px 0;
+    background-color: rgb(235,235,235);
+}
+
+section.catalogo h2{
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.arrow-left img{
+    transform: rotate(-90deg);
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.arrow-right img{
+    transform: rotate(90deg);
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.arrow-left img:hover,
+.arrow-right img:hover{
+    opacity: 0.8;
+}
+
+.box-language-single{
+    margin-top: 60px;
+}
+
+.box-language-single p{
+    font-size: 17px;
+    font-weight: normal;
+}
+
+/*Section planos*/
+section.planos{
+    padding: 70px 0;
+    text-align: center;
+}
+
+section.planos h2{
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.box-planos-single{
+    float: left;
+    width: 30.3%;
+    margin: 50px 1.5%;
+    padding: 20px 2%;
+    border-radius: 10px;
+    height: 400px;
+    background-color: rgb(245,245,245);
+    position: relative;
+}
+
+.box-planos-single:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px #646464;
+    border: 1px solid #cccc;
+}
+
+.box-planos-single h1{
+    top: -2.5%;
+    left: -10%;
+    width: 120%;
+}
+
+.box-planos-single:nth-child(2) h1{
+    background-color: rgb(154, 227, 44);
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 0;
+    position: relative;
+    box-shadow: 2px 2px 10px #ccc;
+    font-weight: bold;
+}
+
+.box-planos-single:nth-child(2) h1::before{
+    content: "";
+    border-color: transparent rgb(127, 189, 33) rgb(127, 189, 33) transparent;
+    border-style: solid;
+    border-width: 5px;
+    left: 0;
+    position: absolute;
+    top: -10px;
+}
+
+.box-planos-single:nth-child(2) h1::after{
+    content: "";
+    border-color: transparent transparent rgb(127, 189, 33) rgb(127, 189, 33);
+    border-style: solid;
+    border-width: 5px;
+    right: 0;
+    position: absolute;
+    top: -10px;
+}
+
+.conteudo-box-planos-single{
+    height: 70%;
+}
+
+.a-box-planos-single{
+    margin-top: 5%;
+}
+
+
+.box-planos-single h3{
+    color: #B93160;
+    padding-bottom: 10px;
+}
+
+.box-planos-single img{
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+    float: left;
+}
+
+.box-planos-single p{
+    padding-top: 10px;
+    color: #646464;
+    font-weight: normal;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.box-planos-single a{
+    text-decoration: none;
+    background-color: #B93160;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.box-planos-single a:hover{
+    background-color: #ff4385;
+}
+
+/*Footer*/
+.footer1{
+    background: #B93160;
+    padding: 20px 0;
+}
+
+.footer1 h2{
+    font-weight: normal;
+    font-size: 23px;
+    color: white;
+}
+
+.footer1 p{
+    margin-top: 4px;
+    font-weight: lighter;
+}
+
+.footer1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer1 a:hover{
+    color: black;
+}
+
+.footer1 img{
+    height: 32px;
+    width: 32px;
+    opacity: 0.6;
+}
+
+.footer1 img:hover{
+    opacity: 1;
+}
+
+div.group-icons a{
+    margin-top: 5px;
+    display: inline-block;
+    padding: 0 1px;
+}
+
+/*Footer2*/
+.footer2{
+    padding: 10px 0;
+    background-color: #8d2448;
+    text-align: center;
+    color: white;
+}
